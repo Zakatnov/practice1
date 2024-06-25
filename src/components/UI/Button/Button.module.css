@@ -1,0 +1,17 @@
+.button {
+  padding: 6px 24px;
+  cursor: pointer;
+  background-color: #E3EEFC;
+  color: #397BF7;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.button img {
+  margin-right: 4px;
+}
+
+.button p {
+  margin: 5px;
+}

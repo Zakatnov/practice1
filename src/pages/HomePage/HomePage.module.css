@@ -1,0 +1,104 @@
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+.controlBlock {
+  width: 85%;
+  margin: 35px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+}
+
+.projectGridContainer {
+  margin: 0px auto;
+  width: 80%;
+}
+
+.deleteButton {
+  position: absolute;
+  left: 17%;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.projectDeleteControl {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+
+.projectDeleteControl input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.projectCount {
+  position: absolute;
+  right: 15%;
+  color: #397BF7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.gridItem {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  position: relative;
+  width: 325px;
+  height: 217px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto 1fr auto;
+}
+
+.projectName {
+  position:absolute;
+  bottom: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  align-self: end;
+  justify-self: start;
+  grid-row: 3;
+  grid-column: 1 / span 3;
+}
+
+.projectActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-row: 1;
+  grid-column: 1 / span 3;
+}
+
+.checkbox {
+  align-self: start;
+}
+
+.editButton {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 24px;
+  cursor: pointer;
+  align-self: start;
+  justify-self: end;
+  position: absolute;
+  top: 5px;
+  right: 16px;
+}
+
+
+
